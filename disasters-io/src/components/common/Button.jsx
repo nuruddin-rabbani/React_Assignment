@@ -4,7 +4,7 @@ function Button({ children, className }) {
     return (
         <button
             className={cn(
-                "bg-primary px-[25px] text-[12px] text-[#FAFAFA] rounded-[6px] font-bold",
+                "bg-primary px-[25px] h-[42px] text-[12px] text-[#FAFAFA] rounded-[6px] font-bold",
                 className
             )}
         >

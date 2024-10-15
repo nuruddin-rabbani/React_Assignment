@@ -1,31 +1,31 @@
+import { DashboardCardInfo } from "../../data/data";
+import Button from "../common/Button";
 import Container from "../common/Container";
+import FilterBox from "../common/FilterBox";
+import SearchBox from "../common/SearchBox";
 import SectionTitle from "../common/SectionTitle";
 import WelcomeText from "../common/WelcomeText";
-import SearchBox from "../common/SearchBox";
-import FilterBox from "../common/FilterBox";
-import Button from "../common/Button";
-import { DashboardCardInfo } from "../../data/data";
 
 function Dashboard() {
     return (
         <>
             <section className="bg-[#E4E4E7] pt-[32px] pb-[23px]">
-                <Container className="max-w-[1268px] flex justify-between items-center">
+                <Container className="max-w-[1268px] flex flex-col md:flex-row justify-between items-start">
                     <div className="">
                         <WelcomeText>Welcome back</WelcomeText>
                         <SectionTitle>Dashboard</SectionTitle>
                     </div>
-                    <div className="flex gap-[14px]">
-                        <SearchBox />
+                    <div className="w-full flex flex-col md:flex-row gap-[14px]">
+                        <SearchBox className="" />
                         <FilterBox />
-                        <Button>Cyber Ai</Button>
+                        <Button className="">Cyber Ai</Button>
                     </div>
                 </Container>
             </section>
             <section>
-                <Container>
+                <Container className="max-w-[1300px]">
                     <div>
-                        <div className="grid grid-cols-4 items-start gap-[25px] py-10">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  items-start gap-[25px] py-10">
                             {DashboardCardInfo.map(
                                 ({ img, title, subtitle, amount }) => (
                                     <div className="pb-[10px]">
