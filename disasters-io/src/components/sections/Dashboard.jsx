@@ -123,7 +123,7 @@ function Dashboard() {
                                         alt=""
                                     />
                                 </div>
-                                <button className="text-[12px] bg-primary text-white rounded-full px-[25px] py-[5px] md:py-[11px]">
+                                <button className="text-[12px] md:text-[15px] bg-primary text-white rounded-full px-[25px] py-[5px] md:py-[11px]">
                                     Send
                                 </button>
                             </div>

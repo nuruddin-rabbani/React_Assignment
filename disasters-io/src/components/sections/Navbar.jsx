@@ -1,15 +1,17 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 import { navItems } from "../../data/data";
 import Container from "../common/Container";
 import MobileMenu from "./MobileMenu";
 
 function Navbar() {
-     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-     const toggleMenu = () => {
-         setIsMenuOpen((prev) => !prev);
-     };
-    
+    const toggleMenu = () => {
+        setIsMenuOpen((prev) => !prev);
+    };
+
     return (
         <nav className="w-full bg-[#E4E4E7] pt-[23px] pb-[15px] border-b-[1px] border-[#3f3f46]">
             <Container className="w-full lg:max-w-[1268px] flex items-center justify-between">
@@ -19,12 +21,12 @@ function Navbar() {
                 <div className="hidden lg:flex items-center gap-[35px]">
                     {navItems.map(({ label, url }, i) => (
                         <li className="list-none" key={i}>
-                            <a
+                            <Link
+                                to={url}
                                 className="text-[14px] text-tertiary font-normal hover:font-bold hover:text-secondary hover:underline hover:decoration-2 hover:underline-offset-[26.5px] transition-colors duration-150"
-                                href={url}
                             >
                                 {label}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </div>

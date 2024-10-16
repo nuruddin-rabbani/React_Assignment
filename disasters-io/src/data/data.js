@@ -1,27 +1,27 @@
 export const navItems = [
     {
         label: "Dashboard",
-        url: "#",
+        url: "/",
     },
     {
         label: "Incidents",
-        url: "#",
+        url: "/incidents",
     },
     {
         label: "Locations",
-        url: "#",
+        url: "/locations",
     },
     {
         label: "Activities",
-        url: "#",
+        url: "/activities",
     },
     {
         label: "Documents",
-        url: "#",
+        url: "/documents",
     },
     {
         label: "Cypher AI",
-        url: "#",
+        url: "cypherai",
     },
 ];
 
