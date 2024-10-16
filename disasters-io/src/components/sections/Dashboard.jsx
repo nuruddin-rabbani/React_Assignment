@@ -70,60 +70,60 @@ function Dashboard() {
                     </button>
                 </div>
                 {/*================= Chatbox======================= */}
-                {!isChatOpen && (
-                    <div className="fixed bottom-[80px] right-[10px] md:right-[30px] bg-[#f4f4f5] shadow-lg rounded-[12px] w-[331px] overflow-hidden">
-                        <h2 className="bg-primary text-white text[-18px] font-bold leading-[23px] px-[15px] py-[25px]">
+                {isChatOpen && (
+                    <div className="fixed bottom-[80px] right-[10px] md:right-[30px] bg-[#f4f4f5] shadow-lg rounded-[12px] max-w-[331px] md:w-[331px] overflow-hidden">
+                        <h2 className="bg-primary text-white text-[14px] md:text-[18px] font-bold leading-[23px] px-[15px] py-[15px] md:py-[25px]">
                             Chat With Cypher
                         </h2>
-                        <div className="space-y-[15px] pt-[27px] pb-[15px] px-[15px] relative">
-                            <div className="w-[213px] ms-auto">
-                                <p className="text-[12px] bg-[#3f3f46] text-white rounded-[7px] px-[13px] py-[15px] inline-block">
+                        <div className="space-y-[5px] md:space-y-[15px] pt-[8px] md:pt-[27px] pb-[8px] md:pb-[15px] px-[15px] relative">
+                            <div className="max-w-[213px] ms-auto">
+                                <p className="text-[10px] md:text-[12px] bg-[#3f3f46] text-white rounded-[7px] px-[8px] md:px-[13px] py-[10px] md:py-[15px] inline-block">
                                     Lorem ipsum dolar sit general sac mascho
                                     werho
                                 </p>
                             </div>
-                            <div className="w-[213px] me-auto">
+                            <div className="max-w-[213px] me-auto">
+                                <p className="text-[10px] md:text-[12px] bg-transparent text-accent border-[#e4e4e7]  border-[1px] rounded-[7px] px-[8px] md:px-[13px] py-[10px] md:py-[15px] inline-block">
+                                    Lorem ipsum dolar sit general sac mascho
+                                    werho
+                                </p>
+                            </div>
+                            <div className="max-w-[213px] me-auto">
                                 <p className="text-[12px] bg-transparent text-accent border-[1px] border-[#e4e4e7] rounded-[7px] px-[13px] py-[15px] inline-block">
                                     Lorem ipsum dolar sit general sac mascho
                                     werho
                                 </p>
                             </div>
-                            <div className="w-[213px] me-auto">
-                                <p className="text-[12px] bg-transparent text-accent border-[1px] border-[#e4e4e7] rounded-[7px] px-[13px] py-[15px] inline-block">
-                                    Lorem ipsum dolar sit general sac mascho
-                                    werho
-                                </p>
-                            </div>
-                            <div className="w-[213px] ms-auto">
-                                <p className="text-[12px] bg-[#3f3f46] text-white rounded-[7px] px-[13px] py-[15px] inline-block">
+                            <div className="max-w-[213px] ms-auto">
+                                <p className="text-[10px] md:text-[12px] bg-[#3f3f46] text-white rounded-[7px] px-[8px] md:px-[13px] py-[10px] md:py-[15px] inline-block">
                                     Lorem ipsum dolar sit general sac mascho
                                     werho
                                 </p>
                             </div>
                             <input
-                                className="w-full px-[10px] py-[17px] border border-[#e5e7eb] rounded-[6px] outline-none placeholder:text-[12px] bg-transparent"
+                                className="w-full px-[10px] py-[12px] md:py-[17px] border border-[#e5e7eb] rounded-[6px] outline-none placeholder:text-[12px] bg-transparent"
                                 type="text"
                                 placeholder="Enter Your Question "
                             />
                             <div className="flex justify-between">
                                 <div className="flex gap-[7px] items-center ">
                                     <img
-                                        className="size-6"
+                                        className="size-4 md:size-6"
                                         src="/img/AttachIcon01.png"
                                         alt=""
                                     />
                                     <img
-                                        className="size-6"
+                                        className="size-4 md:size-6"
                                         src="/img/AttachIcon02.png"
                                         alt=""
                                     />
                                     <img
-                                        className="size-6"
+                                        className="size-4 md:size-6"
                                         src="/img/AttachIcon03.png"
                                         alt=""
                                     />
                                 </div>
-                                <button className="bg-primary text-white rounded-full px-[25px] py-[11px]">
+                                <button className="text-[12px] bg-primary text-white rounded-full px-[25px] py-[5px] md:py-[11px]">
                                     Send
                                 </button>
                             </div>
