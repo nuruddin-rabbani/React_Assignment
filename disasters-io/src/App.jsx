@@ -6,6 +6,7 @@ function App() {
         <main className="font-onest w-full">
             <Navbar />
             <Dashboard />
+            
         </main>
     );
 }
