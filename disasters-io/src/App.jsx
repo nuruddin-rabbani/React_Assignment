@@ -7,6 +7,7 @@ import Locations from "./components/sections/Locations";
 import Navbar from "./components/sections/Navbar";
 import CypherAi from "./components/sections/CypherAi";
 import NotFound from "./components/sections/NotFound";
+import StepperComponent from "./components/sections/NewIncidentStep01";
 
 function App() {
     return (
@@ -22,10 +23,8 @@ function App() {
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </BrowserRouter>
+     
+        
     );
 }
-
-// <Navbar />
-//             <Dashboard />
-
 export default App;
