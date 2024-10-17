@@ -30,10 +30,10 @@ export const NewIncidentStep01 = ({ onGetStarted }) => {
     return (
         <section className="mt-[35px]">
             <Container className="flex flex-col items-center">
-                <SectionTitle className="text-[32px] leading-10">
+                <SectionTitle className="text-[26px] md:text-[32px] leading-10">
                     Let’s get started
                 </SectionTitle>
-                <p className="max-w-[468px] text-accent pt-[14px]">
+                <p className="max-w-[468px] text-accent text-center text-[14px] pt-[14px]">
                     Lorem ipsum dolar sit general sac mascho werhoLorem ipsum
                     dolar sit general sac mascho werhoLorem ipsum dolar sit gene
                 </p>
@@ -42,14 +42,17 @@ export const NewIncidentStep01 = ({ onGetStarted }) => {
                     src="/img/Stepbar.png"
                     alt=""
                 />
-                <div className="flex gap-[55px]">
+                <div className="flex flex-col md:flex-row gap-[35px] lg:gap-[55px]">
                     {steps.map((step, index) => (
                         <div
                             key={index}
-                            className="bg-[#E4E4E7] rounded-[10px] w-[235px] h-[269px] flex flex-col items-start justify-between cursor-pointer px-5 py-6"
+                            className="bg-[#E4E4E7] rounded-[10px] w-full lg:w-[235px] h-[269px] flex flex-col items-start justify-between cursor-pointer px-5 py-6"
                             onClick={() => handleStepClick(index)}
                         >
-                            <img src={step.icon} className="size-[54px]" />
+                            <img
+                                src={step.icon}
+                                className="size-[44px] md:size-[54px]"
+                            />
                             <div className="">
                                 <h3 className="font-bold text-[20px] pb-[22px] leading-[29px]">
                                     {step.label}
@@ -61,7 +64,7 @@ export const NewIncidentStep01 = ({ onGetStarted }) => {
                         </div>
                     ))}
                 </div>
-                <div className="text-center mt-[102px]">
+                <div className="text-center mt-[72px] lg:mt-[102px]">
                     <button
                         className="bg-primary px-[25px] h-[42px] text-[12px]  text-[#FAFAFA] rounded-[6px] font-bold"
                         onClick={onGetStarted}
