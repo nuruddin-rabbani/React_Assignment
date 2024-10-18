@@ -13,10 +13,10 @@ function Navbar() {
     };
 
     return (
-        <nav className="w-full bg-[#E4E4E7] pt-[23px] pb-[15px] border-b-[1px] border-[#3f3f46]">
+        <nav className="w-full bg-[#f4f4f5] pt-[23px] pb-[15px] border-b-[1px] border-[#E4E4E7]">
             <Container className="w-full lg:max-w-[1268px] flex items-center justify-between">
                 <div>
-                    <img src="/img/Logo.png" alt="Logo" />
+                    <img className="w-full" src="/img/Logo.png" alt="Logo" />
                 </div>
                 <div className="hidden lg:flex items-center gap-[35px]">
                     {navItems.map(({ label, url }, i) => (

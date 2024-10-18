@@ -20,15 +20,9 @@ const steps = [
     },
 ];
 
-export const NewIncidentStep01 = ({ onGetStarted }) => {
-    const [activeStep, setActiveStep] = useState(0);
-
-    const handleStepClick = (index) => {
-        setActiveStep(index);
-    };
-
+function IncidentStep01({ handleNewIncident }) {
     return (
-        <section className="mt-[35px]">
+        <section className="mt-[85px]">
             <Container className="flex flex-col items-center">
                 <SectionTitle className="text-[26px] md:text-[32px] leading-10">
                     Let’s get started
@@ -46,8 +40,7 @@ export const NewIncidentStep01 = ({ onGetStarted }) => {
                     {steps.map((step, index) => (
                         <div
                             key={index}
-                            className="bg-[#E4E4E7] rounded-[10px] w-full lg:w-[235px] h-[269px] flex flex-col items-start justify-between cursor-pointer px-5 py-6"
-                            onClick={() => handleStepClick(index)}
+                            className="bg-[#f4f4f5] rounded-[10px] w-full lg:w-[235px] h-[269px] flex flex-col items-start justify-between cursor-pointer px-5 py-6"
                         >
                             <img
                                 src={step.icon}
@@ -64,10 +57,9 @@ export const NewIncidentStep01 = ({ onGetStarted }) => {
                         </div>
                     ))}
                 </div>
-                <div className="text-center mt-[72px] lg:mt-[102px]">
+                <div className="text-center mt-[62px] lg:mt-[102px] mb-[45px]">
                     <button
                         className="bg-primary px-[25px] h-[42px] text-[12px]  text-[#FAFAFA] rounded-[6px] font-bold"
-                        onClick={onGetStarted}
                     >
                         Get Started
                     </button>
@@ -77,29 +69,4 @@ export const NewIncidentStep01 = ({ onGetStarted }) => {
     );
 };
 
-const App = () => {
-    const [showStepper, setShowStepper] = useState(true);
-
-    const handleGetStarted = () => {
-        setShowStepper(false);
-    };
-
-    return (
-        <div>
-            {showStepper ? (
-                <StepperComponent onGetStarted={handleGetStarted} />
-            ) : (
-                <div className="max-w-md mx-auto p-4">
-                    <h1 className="text-2xl font-bold mb-4">
-                        Welcome to the next page
-                    </h1>
-                    <p className="text-lg">
-                        You have successfully completed the steps!
-                    </p>
-                </div>
-            )}
-        </div>
-    );
-};
-
-export default App;
+export default IncidentStep01;
