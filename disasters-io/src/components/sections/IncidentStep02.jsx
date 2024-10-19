@@ -1,6 +1,6 @@
 import Container from "../common/Container";
-import SectionTitle from "../common/SectionTitle";
 import IncidentsCard from "../common/IncidentsCard";
+import SectionTitle from "../common/SectionTitle";
 
 import React from "react";
 
@@ -87,7 +87,14 @@ function IncidentStep02({ onNextStep }) {
                     />
                 </div>
 
-                <button onClick={onNextStep}>Click Me</button>
+                <div className="w-full text-center mb-20">
+                    <button
+                        onClick={onNextStep}
+                        className="bg-primary text-[14px] md:text-[16px] px-[25px] py-[12px] lg:py-[15px] text-white rounded-[10px] font-bold mt-10"
+                    >
+                        Next Step
+                    </button>
+                </div>
             </Container>
         </section>
     );
