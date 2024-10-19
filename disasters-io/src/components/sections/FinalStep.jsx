@@ -6,7 +6,7 @@ import Container from "../common/Container";
 function FinalStep({ onNextStep }) {
     return (
         <section>
-            <Container className="max-w-[752px] pt-10 mb-20">
+            <Container className="max-w-full md:max-w-[752px] pt-10 mb-20">
                 <SectionTitle className="text-[24px]">
                     Where’s the incident?
                 </SectionTitle>

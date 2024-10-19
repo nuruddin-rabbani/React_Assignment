@@ -29,7 +29,7 @@ function Locations() {
                     <div className="w-full md:w-[60%] flex flex-col md:flex-row gap-1 lg:gap-[14px] md:justify-end items-center">
                         <SearchBox />
                         <FilterBox />
-                        <div className="flex justify-center items-center bg-primary w-full md:w-auto md:px-[10px] lg:px-[25px] h-[42px] rounded-[6px] gap-[2px] gap-0 lg:gap-1">
+                        <div className="flex justify-center items-center bg-primary w-full md:w-auto md:px-[10px] lg:px-[25px] h-[42px] rounded-[6px] gap-[2px] lg:gap-1">
                             <img className="size-4" src="/img/PlusIcon.png" />
                             <button className="text-[12px] text-[#FAFAFA] font-bold">
                                 New Incidents

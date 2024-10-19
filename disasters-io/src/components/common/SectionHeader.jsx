@@ -13,7 +13,7 @@ function SectionHeader({ title}) {
                     <WelcomeText>Welcome back</WelcomeText>
                     <SectionTitle className="w-full">{title}</SectionTitle>
                 </div>
-                <div className="w-full md:w-[60%] flex flex-col md:flex-row gap-[10px] lg:gap-[14px] md:justify-end">
+                <div className="w-full md:w-[70%] flex flex-col md:flex-row gap-[8px] lg:gap-[14px] md:justify-end">
                     <SearchBox />
                     <FilterBox />
                     <Button>Cyber Ai</Button>

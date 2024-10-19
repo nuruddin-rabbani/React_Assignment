@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-
+import { Link, useLocation } from "react-router-dom"; 
 import { navItems } from "../../data/data";
 import Container from "../common/Container";
 import MobileMenu from "./MobileMenu";
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const location = useLocation(); 
 
     const toggleMenu = () => {
         setIsMenuOpen((prev) => !prev);
@@ -23,13 +23,19 @@ function Navbar() {
                         <li className="list-none" key={i}>
                             <Link
                                 to={url}
-                                className="text-[14px] text-tertiary font-normal hover:font-bold hover:text-secondary hover:underline hover:decoration-2 hover:underline-offset-[26.5px] transition-colors duration-150"
+                                className={`text-[14px] text-tertiary font-normal 
+                                ${
+                                    location.pathname === url
+                                        ? "font-extrabold text-[#09090b] underline decoration-2 underline-offset-[30px]"
+                                        : ""
+                                }`}
                             >
                                 {label}
                             </Link>
                         </li>
                     ))}
                 </div>
+
                 {/* Right Side of Navbar */}
                 <div className="flex items-center gap-[9px]">
                     <div>

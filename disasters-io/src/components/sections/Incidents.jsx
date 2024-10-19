@@ -24,7 +24,7 @@ function Incidents() {
     return (
         <section>
             <div className="bg-[#f4f4f5] pt-[32px] pb-[23px]">
-                <Container className="max-w-[1268px] flex flex-col md:flex-row md:justify-between items-start">
+                <Container className="max-w-[1300px] flex flex-col md:flex-row md:justify-between items-start">
                     <div className="pb-2">
                         <WelcomeText>Welcome back</WelcomeText>
                         <SectionTitle>Incidents</SectionTitle>
@@ -32,12 +32,15 @@ function Incidents() {
                     <div className="w-full md:w-2/3 flex flex-col md:flex-row gap-[14px] md:justify-end">
                         <SearchBox />
                         <FilterBox />
-                        <button
-                            onClick={handleNewIncident}
-                            className="bg-primary px-[25px] h-[42px] text-[12px] text-[#FAFAFA] rounded-[6px] font-bold"
-                        >
-                            New Incidents
-                        </button>
+                        <div className="flex justify-center items-center bg-primary w-full md:w-auto md:px-[10px] lg:px-[25px] h-[42px] rounded-[6px] gap-[2px] lg:gap-1">
+                            <img className="size-4" src="/img/PlusIcon.png" />
+                            <button
+                                onClick={handleNewIncident}
+                                className="text-[12px] text-[#FAFAFA] font-bold"
+                            >
+                                New Incidents
+                            </button>
+                        </div>
                     </div>
                 </Container>
             </div>
@@ -52,7 +55,7 @@ function Incidents() {
                 {currentStep === 3 && (
                     <IncidentStep03 onNextStep={handleNextStep} />
                 )}
-                {currentStep === 4 && <FinalStep/>}
+                {currentStep === 4 && <FinalStep />}
             </Container>
         </section>
     );

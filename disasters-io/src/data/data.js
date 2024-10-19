@@ -63,3 +63,4 @@ export const DashboardCardInfo = [
         amount: "$1,456,654.00",
     },
 ];
+
