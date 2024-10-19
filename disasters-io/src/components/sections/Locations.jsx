@@ -3,7 +3,7 @@ import FilterBox from "../common/FilterBox";
 import List from "../common/List";
 import SearchBox from "../common/SearchBox";
 import SectionTitle from "../common/SectionTitle";
-import Title from "../common/TitleTxt";
+import TitleTxt from "../common/TitleTxt";
 import WelcomeText from "../common/WelcomeText";
 
 function Locations() {
