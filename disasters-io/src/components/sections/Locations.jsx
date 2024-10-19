@@ -3,7 +3,7 @@ import FilterBox from "../common/FilterBox";
 import List from "../common/List";
 import SearchBox from "../common/SearchBox";
 import SectionTitle from "../common/SectionTitle";
-import Titlle from "../common/Title";
+import Title from "../common/Title";
 import WelcomeText from "../common/WelcomeText";
 
 function Locations() {
@@ -77,7 +77,7 @@ function Locations() {
 
                     {/* ============Description================ */}
                     <div className="">
-                        <Titlle>Description</Titlle>
+                        <Title>Description</Title>
                         <p className="text-[16px] leading-[22px] text-accent">
                             Lorem ipsum dolar sit general sac mascho werhoLorem
                             ipsum dolar sit general sac mascho werhoLorem ipsum
@@ -92,7 +92,7 @@ function Locations() {
 
                     {/* ==============Locations=============== */}
                     <div>
-                        <Titlle>Locations</Titlle>
+                        <Title>Locations</Title>
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-[17.5px]">
                             {locationCardInfo.map(
                                 ({
@@ -101,8 +101,8 @@ function Locations() {
                                     title,
                                     subtitle,
                                     amount,
-                                }) => (
-                                    <div className="relative w-full ">
+                                }, i) => (
+                                    <div key={i} className="relative w-full ">
                                         <img
                                             className="rounded-[7px] w-full w-full lg:w-[214px]"
                                             src={img}
@@ -133,7 +133,7 @@ function Locations() {
                     {/* ============Activities================== */}
                     <div>
                         <div className="flex justify-between items-center">
-                            <Titlle>Activities</Titlle>
+                            <Title>Activities</Title>
                             <p className="text-[14px] text-secondary underline">
                                 Sell all
                             </p>
@@ -149,7 +149,7 @@ function Locations() {
                     {/* ============Documents================== */}
                     <div className="mb-0 lg:mb-[170px]">
                         <div className="flex justify-between items-center">
-                            <Titlle>Documents</Titlle>
+                            <Title>Documents</Title>
                             <p className="text-[14px] text-secondary underline">
                                 Sell all
                             </p>
