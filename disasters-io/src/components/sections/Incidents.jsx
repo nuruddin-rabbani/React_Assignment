@@ -28,10 +28,10 @@ function Incidents() {
                             <WelcomeText>Welcome back</WelcomeText>
                             <SectionTitle>Incidents</SectionTitle>
                         </div>
-                        <div className="w-full md:w-2/3 flex flex-col md:flex-row gap-[14px] md:justify-end">
+                        <div className="w-full basis-[65%] flex flex-col md:flex-row gap-[14px] md:justify-end">
                             <SearchBox />
                             <FilterBox />
-                            <div className="flex items-center bg-primary px-[25px] h-[42px] rounded-[6px] gap-1">
+                            <div className="flex justify-center items-center bg-primary md:px-[10px] lg:px-[25px] h-[42px] rounded-[6px] gap-[2px] lg:gap-1">
                                 <img
                                     className="size-4"
                                     src="/img/PlusIcon.png"
