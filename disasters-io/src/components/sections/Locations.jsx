@@ -1,6 +1,6 @@
 import Container from "../common/Container";
 import FilterBox from "../common/FilterBox";
-import List from "../common/LIst";
+import List from "../common/List";
 import SearchBox from "../common/SearchBox";
 import SectionTitle from "../common/SectionTitle";
 import Titlle from "../common/Title";
