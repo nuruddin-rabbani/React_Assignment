@@ -77,7 +77,7 @@ function Locations() {
 
                     {/* ============Description================ */}
                     <div className="">
-                        <Title>Description</Title>
+                        <TitleTxt>Description</TitleTxt>
                         <p className="text-[16px] leading-[22px] text-accent">
                             Lorem ipsum dolar sit general sac mascho werhoLorem
                             ipsum dolar sit general sac mascho werhoLorem ipsum
@@ -92,7 +92,7 @@ function Locations() {
 
                     {/* ==============Locations=============== */}
                     <div>
-                        <Title>Locations</Title>
+                        <TitleTxt>Locations</TitleTxt>
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-[17.5px]">
                             {locationCardInfo.map(
                                 (
@@ -136,7 +136,7 @@ function Locations() {
                     {/* ============Activities================== */}
                     <div>
                         <div className="flex justify-between items-center">
-                            <Title>Activities</Title>
+                            <TitleTxt>Activities</TitleTxt>
                             <p className="text-[14px] text-secondary underline">
                                 Sell all
                             </p>
@@ -152,7 +152,7 @@ function Locations() {
                     {/* ============Documents================== */}
                     <div className="mb-0 lg:mb-[170px]">
                         <div className="flex justify-between items-center">
-                            <Title>Documents</Title>
+                            <TitleTxt>Documents</TitleTxt>
                             <p className="text-[14px] text-secondary underline">
                                 Sell all
                             </p>

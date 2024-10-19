@@ -1,4 +1,3 @@
-import React from "react";
 import SectionTitle from "../common/SectionTitle";
 import WelcomeText from "../common/WelcomeText";
 import Container from "../common/Container";

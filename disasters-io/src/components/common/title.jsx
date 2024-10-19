@@ -1,6 +1,6 @@
 import { cn } from "../../utilities/Index";
 
-function Title({ children, className }) {
+function TitleTxt({ children, className }) {
     return (
         <h3
             className={cn(
@@ -13,4 +13,4 @@ function Title({ children, className }) {
     );
 }
 
-export default Title;
+export default TitleTxt;
