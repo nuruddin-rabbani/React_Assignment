@@ -95,16 +95,19 @@ function Locations() {
                         <Title>Locations</Title>
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-[17.5px]">
                             {locationCardInfo.map(
-                                ({
-                                    img,
-                                    incidentImg,
-                                    title,
-                                    subtitle,
-                                    amount,
-                                }, i) => (
+                                (
+                                    {
+                                        img,
+                                        incidentImg,
+                                        title,
+                                        subtitle,
+                                        amount,
+                                    },
+                                    i
+                                ) => (
                                     <div key={i} className="relative w-full ">
                                         <img
-                                            className="rounded-[7px] w-full w-full lg:w-[214px]"
+                                            className="rounded-[7px] w-full lg:w-[214px]"
                                             src={img}
                                         />
                                         <div className="pt-[14px]">

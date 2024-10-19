@@ -2,7 +2,9 @@ import Container from "../common/Container";
 import SectionTitle from "../common/SectionTitle";
 import IncidentsCard from "../common/IncidentsCard";
 
-function IncidentStep02() {
+import React from "react";
+
+function IncidentStep02({ onNextStep }) {
     return (
         <section className="mt-[35px]">
             <Container className="max-w-[753px] ">
@@ -79,10 +81,11 @@ function IncidentStep02() {
                         title={"Avalanche"}
                     />
                 </div>
+
+                <button onClick={onNextStep}>Click Me</button>
             </Container>
         </section>
     );
 }
 
 export default IncidentStep02;
-

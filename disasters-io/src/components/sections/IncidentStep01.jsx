@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Container from "../common/Container";
 import SectionTitle from "../common/SectionTitle";
 
@@ -20,7 +20,8 @@ const steps = [
     },
 ];
 
-function IncidentStep01({ handleNewIncident }) {
+
+function IncidentStep01({ onNextStep }) {
     return (
         <section className="mt-[85px]">
             <Container className="flex flex-col items-center">
@@ -30,7 +31,7 @@ function IncidentStep01({ handleNewIncident }) {
                 <p className="max-w-[468px] text-accent text-center text-[14px] pt-[14px]">
                     Lorem ipsum dolar sit general sac mascho werhoLorem ipsum
                     dolar sit general sac mascho werhoLorem ipsum dolar sit gene
-                </p>
+                </p>{" "}
                 <img
                     className="w-[609px] py-[33px]"
                     src="/img/Stepbar.png"
@@ -59,6 +60,7 @@ function IncidentStep01({ handleNewIncident }) {
                 </div>
                 <div className="text-center mt-[62px] lg:mt-[102px] mb-[45px]">
                     <button
+                        onClick={onNextStep}
                         className="bg-primary px-[25px] h-[42px] text-[12px]  text-[#FAFAFA] rounded-[6px] font-bold"
                     >
                         Get Started
@@ -67,6 +69,6 @@ function IncidentStep01({ handleNewIncident }) {
             </Container>
         </section>
     );
-};
+}
 
 export default IncidentStep01;
